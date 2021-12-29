@@ -12,6 +12,8 @@ Users should be able to:
 - Smooth scrolling, infinite scrolling section, sticky-nav, toggle menu-btn.
 
 ### Screenshot
+<img width="947" alt="banking1" src="https://user-images.githubusercontent.com/63516391/147678818-51308dc0-8ddf-4ef7-ac51-5e15aac3aaee.png">
+<a href="https://dzoni19.github.io/easybank-landing-page-solution/">See More</a>
 
 ### Links
 
