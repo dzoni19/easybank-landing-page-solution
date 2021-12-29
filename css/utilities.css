@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap');
+
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 1.8rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
+  background: var(--white);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+/* section */
+
+.section {
+  height: 100vh;
+  transition: transform 0.5s, opacity 1s;
+}
+
+.section-hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+/* tapygraphy */
+
+.section-headers {
+  margin: 7rem 0;
+  padding: 0 2rem;
+  text-align: center;
+  display: block;
+}
+.section-headers h1 {
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+h1 {
+  font-weight: 400;
+}
+h2 {
+  font-weight: 300;
+  font-size: 1.5rem;
+  margin: 1.5rem 0;
+}
+
+p {
+  color: var(--grayish-blue);
+  margin: 2.5rem 0;
+}
+span {
+  color: var(--grayish-blue);
+}
+p,
+span {
+  font-size: 0.8rem;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+/* buttons */
+
+.btn {
+  border: none;
+  border-radius: 2rem;
+  background: linear-gradient(to right, #31d35c, #2bb7da);
+  padding: 0.8rem 1.7rem;
+  color: var(--white);
+  cursor: pointer;
+  font-size: 0.8rem;
+  display: inline-block;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+  outline: none;
+  opacity: 0.7;
+}
+
+.menu-btn svg {
+  cursor: pointer;
+  display: block;
+  margin-bottom: 0.3rem;
+}
+.menu-btn:focus,
+.menu-btn:active {
+  outline: none;
+}
+
+@media only screen and (min-width: 1280px) {
+  .section-headers {
+    max-width: 35rem;
+    margin: auto 0;
+  }
+  .section-headers h1 {
+    font-size: 2.4rem;
+  }
+  .section-headers p {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 85rem;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 3rem;
+  }
+  .section-headers {
+    text-align: left;
+    max-width: 40rem;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .section-headers {
+    text-align: left;
+    max-width: 30rem;
+    padding: 0;
+  }
+  .section-headers h1 {
+    font-size: 3.6rem;
+    white-space: nowrap;
+    padding: 0;
+  }
+}
